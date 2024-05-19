@@ -5,6 +5,6 @@ Python Implementation of Projects from the [Software Engineering Lab](https://gi
 | :-----: | :---: | :-----: |
 | 2 | Test-driven Development | TDD |
 | 3 | Object Oriented Principles | SOLID-Principles |
-| 4 | Behavior Driven Development | |
+| 4 | Behavior Driven Development | BDD |
 | 5 | Profiling | ProfilingTest |
 | 6 | Design Patterns | |
