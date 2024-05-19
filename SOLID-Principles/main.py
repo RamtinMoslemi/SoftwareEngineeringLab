@@ -19,7 +19,7 @@ if __name__ == '__main__':
             break
 
     method = input('Enter Your Payment Method (1 for online and 2 for on-site): ')
-    order_service = OnlineOrderService() if method == 1 else OnSiteOrderService()
+    order_service = OnlineOrderService() if method == '1' else OnSiteOrderService()
 
     print('Pay Price:')
     order_service.payment(order.get_total_price())
