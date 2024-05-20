@@ -12,6 +12,11 @@ def step_when_i_add_the_two_values(context):
     context.result = context.calculator.calculate(context.calculator.a, context.calculator.b, '+')
 
 
+@when('I multiply the two values')
+def step_when_i_add_the_two_values(context):
+    context.result = context.calculator.calculate(context.calculator.a, context.calculator.b, '*')
+
+
 @when('I perform {operation} on them')
 def step_when_i_perform_operation_on_them(context, operation):
     context.result = context.calculator.calculate(context.calculator.a, context.calculator.b, operation)

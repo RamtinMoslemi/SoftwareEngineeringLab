@@ -17,6 +17,23 @@ Feature: Calculator
       | -1    | 6      | 5  	|
       | 2     | 2      | 4	    |
 
+  Scenario: multiply two numbers
+    Given Two input values, 3 and 2
+    When I multiply the two values
+    Then I expect the result 6
+
+  Scenario Outline: add two numbers
+    Given Two input values, <first> and <second>
+    When I multiply the two values
+    Then I expect the result <result>
+
+    Examples:
+      | first | second | result |
+      | 7     | 12     | 84     |
+      | 9     | 6      | 54  	|
+      | 2     | 2      | 4	    |
+
+
   Scenario: raise to power
     Given Two input values, 4 and 5
     When I perform ^ on them
