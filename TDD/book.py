@@ -1,6 +1,6 @@
 class Book:
-    def __init__(self, book_id, author, title):
-        self.id = book_id
+    def __init__(self, id, author, title):
+        self.id = id
         self.author = author
         self.title = title
 
@@ -8,4 +8,4 @@ class Book:
         return self.title + ' by ' + self.author
 
     def __repr__(self):
-        return self.title + ' by ' + self.author
+        return f'{self.__class__.__name__}(id={self.id}, author={self.author}, title={self.title})'
