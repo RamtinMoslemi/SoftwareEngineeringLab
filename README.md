@@ -3,8 +3,10 @@ Python Implementation of Projects from the [Software Engineering Lab](https://gi
 
 | Session | Topic | Project |
 | :-----: | :---: | :-----: |
+| 1 | Git | |
 | 2 | Test Driven Development | TDD |
 | 3 | Object Oriented Principles | SOLID-Principles |
 | 4 | Behavior Driven Development | BDD |
 | 5 | Profiling | ProfilingTest |
 | 6 | Design Patterns | DesignPatterns |
+| 7 | Docker | |
