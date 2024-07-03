@@ -20,7 +20,7 @@ class Calculator:
         self.memory //= other
         return self.memory
 
-    def calculate(self, a, b, operation):
+    def calculate(self, a: float, b: float, operation: str) -> float:
         if operation == '+':
             self.memory = a + b
         elif operation == '-':
@@ -35,5 +35,5 @@ class Calculator:
             raise 'Invalid Operation!'
         return self.memory
 
-    def operate(self, operation):
+    def operate(self, operation: str) -> float:
         return self.calculate(self.a, self.b, operation)
