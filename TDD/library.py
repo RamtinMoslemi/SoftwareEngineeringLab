@@ -7,19 +7,19 @@ class Library:
         self.books = list()
         self.students = list()
 
-    def add_book(self, book):
+    def add_book(self, book: Book) -> None:
         if isinstance(book, Book):
             self.books.append(book)
         else:
             raise 'Not a Book'
 
-    def add_student(self, student):
+    def add_student(self, student: Student) -> None:
         if isinstance(student, Student):
             self.students.append(student)
         else:
             raise 'Not a Student'
 
-    def lend_book(self, book, student):
+    def lend_book(self, book: Book, student: Student) -> bool:
         if book not in self.books:
             print(str(book) + ' not registered.')
             return False
@@ -34,7 +34,7 @@ class Library:
         print(str(book) + ' lent to ' + str(student) + '.')
         return True
 
-    def return_book(self, book, student):
+    def return_book(self, book: Book, student: Student) -> bool:
         if student not in self.students:
             print(str(student) + ' not registered.')
             return False
@@ -45,7 +45,7 @@ class Library:
         student.books.remove(book)
         return True
 
-    def search_students(self, keys, search_by):
+    def search_students(self, keys: list, search_by: str) -> list[Student]:
         if search_by not in ('name', 'id'):
             raise 'You can only search by name or id'
         results = list()
@@ -56,7 +56,7 @@ class Library:
                 results.append(student)
         return results
 
-    def search_books(self, keys, search_by):
+    def search_books(self, keys: list, search_by: str) -> list[Book]:
         if search_by not in ('title', 'author', 'id'):
             raise 'You can only search by title, author or id'
         results = list()
