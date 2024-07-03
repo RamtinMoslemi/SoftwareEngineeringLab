@@ -1,5 +1,5 @@
 class Food:
-    def __init__(self, food_name, food_price):
+    def __init__(self, food_name: str, food_price: float):
         self.name = food_name
         self.price = food_price
         self.quantity = 1

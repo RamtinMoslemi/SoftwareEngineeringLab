@@ -3,12 +3,12 @@ import datetime
 
 
 class Order:
-    def __init__(self, customer_name):
+    def __init__(self, customer_name: str):
         self.customer_name = customer_name
         self.foods = list()
         self.order_date = datetime.datetime.now()
 
-    def add_item(self, food):
+    def add_item(self, food: Food):
         if food in self.foods:
             food.quantity += 1
         elif isinstance(food, Food):
@@ -16,7 +16,7 @@ class Order:
         else:
             raise 'Not a food'
 
-    def get_total_price(self):
+    def get_total_price(self) -> float:
         return sum(self.foods)
 
     def __str__(self):
